@@ -20,11 +20,11 @@ Available in **5 implementations**: C, Python, Bash, PowerShell, and CMD.
 
 | File | Platform | Dependencies |
 |------|----------|-------------|
-| `src/main.c` + `src/tools.c` | Windows / Linux | GCC / CLANG |
+| `src/main.c` + `src/tools.c` | Windows / Linux | GCC / clang |
 | `bin_bypass.py` | Any (Python 3) | Python 3 |
-| `bin_bypass.sh` | Linux / macOS | Bash |
+| `bin_bypass.sh` | Linux / macOS | Bash, Python 3 |
 | `bin_bypass.ps1` | Windows | PowerShell 5+ |
-| `bin_bypass.cmd` | Windows | CMD, Python 3 |
+| `bin_bypass.cmd` | Windows | CMD, Python3 |
 
 ---
 
