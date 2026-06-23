@@ -22,9 +22,6 @@ Available in **5 implementations**: C, Python, Bash, PowerShell, and CMD.
 |------|----------|-------------|
 | `src/main.c` + `src/tools.c` | Windows / Linux | GCC / clang |
 | `bin_bypass.py` | Any (Python 3) | Python 3 |
-| `bin_bypass.sh` | Linux / macOS | Bash, Python 3 |
-| `bin_bypass.ps1` | Windows | PowerShell 5+ |
-| `bin_bypass.cmd` | Windows | CMD, Python3 |
 
 ---
 
@@ -59,24 +56,6 @@ bin-bypass build <path_to_info.txt>
 ```bash
 python bin_bypass.py split ./myapp.exe simple_vk_bypass
 python bin_bypass.py build ./info.txt
-```
-
-**Bash**
-```bash
-bash bin_bypass.sh split ./myapp simple_vk_bypass
-bash bin_bypass.sh build ./info.txt
-```
-
-**PowerShell**
-```powershell
-.\bin_bypass.ps1 split .\myapp.exe simple_vk_bypass
-.\bin_bypass.ps1 build .\info.txt
-```
-
-**CMD**
-```cmd
-bin_bypass.cmd split myapp.exe simple_vk_bypass
-bin_bypass.cmd build info.txt
 ```
 
 **C (build first)**
@@ -163,9 +142,6 @@ bin-bypass/
 │   ├── tools.c           # Core logic (split, build, encode)
 │   └── main.c            # CLI entry point
 ├── bin_bypass.py         # Python implementation
-├── bin_bypass.sh         # Bash implementation
-├── bin_bypass.ps1        # PowerShell implementation
-├── bin_bypass.cmd        # CMD implementation
 └── README.md
 ```
 
