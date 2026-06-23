@@ -11,7 +11,8 @@ static_assert(sizeof(void*) == 8, "Error: this utility supports only 64-bit syst
 #define UNSET_FLAG(flag, n) ((flag) & (~(1U << (n)))) //bit flag implementation
 #define TRUE 1U //bit flag implementation
 #define FALSE 0U //bit flag implementation
-#define FRAGMENT_SIZE 209715200 // 200MB VK limit on files
+#define FRAGMENT_SIZE_OLD 209715200 // 200MB VK limit on files
+#define FRAGMENT_SIZE     10485760 // 10MB old version works bad
 #define BYPASS_AUTOMOD_SIMPLE_SHIFT 13
 
 typedef struct file_info{

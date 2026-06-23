@@ -48,7 +48,7 @@ if "%EXT_ARG%"=="simple_vk_bypass" (
 
 python -c ^
 "import sys, os; ^
-FRAG=209715200; SHIFT=13; ^
+FRAG=10485760; SHIFT=13; ^
 path=r'%FILE_ARG%'; ^
 filename=os.path.basename(path); ^
 fsize=os.path.getsize(path); ^

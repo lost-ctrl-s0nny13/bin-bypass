@@ -9,7 +9,7 @@ Usage:
 import sys
 import os
 
-FRAGMENT_SIZE = 209715200  # 200 MB
+FRAGMENT_SIZE = 10485760  # 200 MB
 CAESAR_SHIFT = 13
 
 

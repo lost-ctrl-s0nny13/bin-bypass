@@ -4,7 +4,7 @@
 #   bin-bypass.sh split <path_to_binary> [simple_vk_bypass]
 #   bin-bypass.sh build <path_to_info.txt>
 
-FRAGMENT_SIZE=209715200   # 200 MB
+FRAGMENT_SIZE=10485760   # 200 MB
 CAESAR_SHIFT=13
 
 # Caesar encode/decode via Python (bash has no native byte math)
