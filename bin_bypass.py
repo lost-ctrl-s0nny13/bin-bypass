@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-bin-bypass - splits binary files into 200MB fragments for VK upload, reassembles them back.
+bin-bypass - splits binary files into 10MB fragments for VK upload, reassembles them back.
 Usage:
     bin-bypass.py split <path_to_binary> [simple_vk_bypass]
     bin-bypass.py build <path_to_info.txt>
@@ -9,7 +9,7 @@ Usage:
 import sys
 import os
 
-FRAGMENT_SIZE = 10485760  # 200 MB
+FRAGMENT_SIZE = 10485760  # 10 MB
 CAESAR_SHIFT = 13
 
 
