@@ -1,6 +1,6 @@
 # bin-bypass
 
-A CLI utility for splitting large binary files into **200 MB fragments** and reassembling them back. Designed to work around VK's file size limit when sharing executables or large binaries. Supports optional Caesar-shift encoding to bypass VK's automoderation.
+A CLI utility for splitting large binary files into **10 MB fragments** and reassembling them back. Designed to work around VK's file size limit when sharing executables or large binaries. Supports optional Caesar-shift encoding to bypass VK's automoderation.
 
 Available in **5 implementations**: C, Python, Bash, PowerShell, and CMD.
 
@@ -8,7 +8,7 @@ Available in **5 implementations**: C, Python, Bash, PowerShell, and CMD.
 
 ## Features
 
-- Split any binary file into ≤200 MB fragments
+- Split any binary file into ≤10 MB fragments
 - Reassemble fragments back into the original file with byte-perfect accuracy
 - Optional `simple_vk_bypass` mode — applies a Caesar shift (ROT-13) to each byte, bypassing VK automoderation
 - Generates an `info.txt` manifest used during reassembly
@@ -72,7 +72,7 @@ gcc src/main.c src/tools.c -o bin-bypass
 ### Split
 
 1. Opens the source binary and reads its size
-2. Calculates the number of 200 MB fragments needed
+2. Calculates the number of 10 MB fragments needed
 3. Writes an `info.txt` manifest:
     ```
     f_name = myapp.exe
